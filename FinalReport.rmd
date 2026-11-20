@@ -56,7 +56,9 @@ barchartGC(~treatment+ infected,data=female)
 barchartGC(~treatment + infected,data=female, type="percent")
 
 ```
-explain
+
+The first bar graph illustrates the number of both the infected and the uninfected females who participated from the drugs and placebo groups. The graph on the other hand, demonstrates that 210 females who recieved triUmpsal did become infected compared to the 147 females who recieved just the plaebo. But because the ttreatment groups contain different number of particpants the percentage of the graph provides stronger data. The second graph shows that 3.69% of females in the drug group became infected, compared to 2.42% in the group with placebos. This shows that the percentage of infected particpants were higher among those who did recieve triUmpsal.  
+
 
 ### Numerical Descriptive Results
 
