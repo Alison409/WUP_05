@@ -73,6 +73,13 @@ The numerical results demonstrate a difference in infection outcomes between fem
 
 ## Inferential Results
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The inferential result findings conclude that all three P values are below 0.05 meaning we reject the $H_0$. There is statistically substantial evidence of a relationship between the treatment group and infection status among female participants. Suggesting that triUmpsal did not show the expected preventive effect among female participants in this data set. 
 
 # Results  
 
