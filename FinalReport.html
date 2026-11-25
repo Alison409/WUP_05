@@ -410,16 +410,41 @@ participants became infected with AIDS or remained uninfected.</p>
 <p>The first bar graph illustrates the number of both the infected and
 the uninfected females who participated from the drugs and placebo
 groups. The graph on the other hand, demonstrates that 210 females who
-recieved triUmpsal did become infected compared to the 147 females who
-recieved just the plaebo. But because the ttreatment groups contain
-different number of particpants the percentage of the graph provides
+received triUmpsal did become infected compared to the 147 females who
+received just the placebo. But because the treatment groups contain
+different number of participants the percentage of the graph provides
 stronger data. The second graph shows that 3.69% of females in the drug
 group became infected, compared to 2.42% in the group with placebos.
-This shows that the percentage of infected particpants were higher among
-those who did recieve triUmpsal.</p>
+This shows that the percentage of infected participants were higher
+among those who did receive triUmpsal.</p>
 </div>
 <div id="numerical-descriptive-results" class="section level3">
 <h3>Numerical Descriptive Results</h3>
+<pre class="r"><code>table1 &lt;- xtabs(~treatment + infected, data=female)
+rowPerc(table1)</code></pre>
+<pre><code>##          infected
+## treatment   aids   none  Total
+##   drug      3.69  96.31 100.00
+##   placebo   2.42  97.58 100.00</code></pre>
+<pre class="r"><code>colPerc(table1)</code></pre>
+<pre><code>##          infected
+## treatment   aids   none
+##   drug     58.82  48.06
+##   placebo  41.18  51.94
+##   Total   100.00 100.00</code></pre>
+<pre class="r"><code>table1</code></pre>
+<pre><code>##          infected
+## treatment aids none
+##   drug     210 5484
+##   placebo  147 5927</code></pre>
+<p>The numerical results demonstrate a difference in infection outcomes
+between female participants who received triUmsal and those who received
+the placebo from the 5,694 females who received the drug, 210 became
+infected, representing 3.69% of the group compared to, the 6.074 females
+who received the placebo, 147 became infected, representing 2.42% of the
+group. Additionally, 96.31% of females in the group remained uninfected,
+compared to 97.58% in the placebo group. Showing that the drug group had
+a higher infection rate than the placebo group.</p>
 </div>
 <div id="inferential-results" class="section level2">
 <h2>Inferential Results</h2>
