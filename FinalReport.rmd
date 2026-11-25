@@ -19,7 +19,7 @@ library(dplyr)
 
 A new  preventative aides drug (triUmpsal) is under test in clinical trials. Consider only the females, does this drug seem effective?  Hint - use dplyr to obtain that sub population with the filter command.
 
-The question is whether the drug triUmpsal appears to make a difference when compared with a placebo. The focus is on female participants in the clinical trial. By comparing the infection outcomes of females who received and the likelihood of becoming infected. To determine the data provides evidence that triUmpsal may be an effective preventative treatment for females. 
+The question is whether the drug triUmpsal appears to make a difference when compared with a placebo. The focus is on female participants in the clinical trial. By comparing the infection outcomes of females who received triUmpsal with those who received a placebo to find out if the relationships between treatment received and the likelihood of becoming infected and to determine the data provides evidence that triUmpsal may be an effective preventative treatment for females. 
 
 $H_0$ There is no relationship between treatment either triUmpsal or placebo and infection status among female participants.   
 $H_A$ There is no relationship between treatment either triUmpsal or placebo and infection status among female participants.  
@@ -37,7 +37,8 @@ table(female$treatment)
 
 We use two categorical variables. Treatment identifies whether female participants received triUmpsal or a placebo. Infection status whether participants became infected with AIDS or remained uninfected. 
 
-categorical - treatment 
+categorical - treatment   
+
 categorical - infection status 
 
 # Results
@@ -57,7 +58,7 @@ barchartGC(~treatment + infected,data=female, type="percent")
 
 ```
 
-The first bar graph illustrates the number of both the infected and the uninfected females who participated from the drugs and placebo groups. The graph on the other hand, demonstrates that 210 females who received triUmpsal did become infected compared to the 147 females who received just the placebo. But because the treatment groups contain different number of participants the percentage of the graph provides stronger data. The second graph shows that 3.69% of females in the drug group became infected, compared to 2.42% in the group with placebos. This shows that the percentage of infected participants were higher among those who did receive triUmpsal.  
+The first bar graph illustrates the frequency of both the infected and the uninfected females who participated from the drugs and placebo groups. The graph on the other hand, demonstrates that 210 females who received triUmpsal did become infected compared to the 147 females who received just the placebo. But because the two treatment groups contain different number of participants the percentage of the graph provides stronger data. The second graph shows that 3.69% of females in the drug group became infected, compared to 2.42% in the group with placebos. This shows that the percentage of infected participants were higher among those who did receive triUmpsal.  
 
 
 ### Numerical Descriptive Results
