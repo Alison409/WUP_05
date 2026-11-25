@@ -57,13 +57,22 @@ barchartGC(~treatment + infected,data=female, type="percent")
 
 ```
 
-The first bar graph illustrates the number of both the infected and the uninfected females who participated from the drugs and placebo groups. The graph on the other hand, demonstrates that 210 females who recieved triUmpsal did become infected compared to the 147 females who recieved just the plaebo. But because the ttreatment groups contain different number of particpants the percentage of the graph provides stronger data. The second graph shows that 3.69% of females in the drug group became infected, compared to 2.42% in the group with placebos. This shows that the percentage of infected particpants were higher among those who did recieve triUmpsal.  
+The first bar graph illustrates the number of both the infected and the uninfected females who participated from the drugs and placebo groups. The graph on the other hand, demonstrates that 210 females who received triUmpsal did become infected compared to the 147 females who received just the placebo. But because the treatment groups contain different number of participants the percentage of the graph provides stronger data. The second graph shows that 3.69% of females in the drug group became infected, compared to 2.42% in the group with placebos. This shows that the percentage of infected participants were higher among those who did receive triUmpsal.  
 
 
 ### Numerical Descriptive Results
 
+```{r}
+table1 <- xtabs(~treatment + infected, data=female)
+rowPerc(table1)
+colPerc(table1)
+table1
+```
+
+The numerical results demonstrate a difference in infection outcomes between female participants who received triUmsal and those who received the placebo from the 5,694 females who received the drug, 210 became infected, representing 3.69% of the group compared to, the 6.074 females who received the placebo, 147 became infected, representing 2.42% of the group. Additionally, 96.31% of females in the group remained uninfected, compared to 97.58% in the placebo group. Showing that the drug group had a higher infection rate than the placebo group. 
 
 ## Inferential Results
+
 
 # Results  
 
